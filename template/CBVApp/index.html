@@ -1,0 +1,10 @@
+<h1>Products List </h1>
+{%for product in products%}
+<ul>
+<li>  PID: {{product.id}}</li>
+<li> PName: {{product.pname}}</li>
+<li>   Price:{{product.price}}</li>
+<li>  Description: {{product.description}}</li>
+</ul>
+<hr/>
+{%endfor%}

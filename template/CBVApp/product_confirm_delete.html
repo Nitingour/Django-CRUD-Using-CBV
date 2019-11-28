@@ -1,0 +1,6 @@
+<form method="post">
+  Do you really want to delete {{product.pname}}????
+  {%csrf_token%}
+<input type="submit" value="delete" />
+  </form>
+<a href="/">Cancel</a>

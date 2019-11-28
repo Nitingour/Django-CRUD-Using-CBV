@@ -1,0 +1,17 @@
+<h1>Products List using ListView </h1>
+<a href="/create">Insert New Product</a>
+
+<table border="1">
+  <tr><th>Pid</th><th>Product Name</th><th>Price</th></tr>
+
+{%for product in product_list%}
+
+<tr>
+  <td>{{product.price}}</td>
+  <td> <a href="detail/{{product.id}}">{{product.pname}}</td>
+  <td>{{product.price}}</td>
+    <td><a href="/update/{{product.id}}">Update</a></td>
+    <td><a href="/delete/{{product.id}}">Delete</a></td>
+<tr>
+{%endfor%}
+</table>
